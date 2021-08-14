@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: cl.exe build active file",
+			"command": "cl.exe",
+			"args": [
+				"/std:c++latest",
+				"/O2",
+                "/Ot",
+                "/Ox",
+				"/EHsc",
+				"/nologo",
+				"/I",
+				"${workspaceFolder}\\libs\\include",
+				"/Fo:",
+				"${workspaceFolder}\\obj\\",
+				"/Fe:",
+				"${workspaceFolder}\\bin\\sudoku-sovler.exe",
+				"*.cpp"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}\\src"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: cl.exe"
+		}
+	]
+}
