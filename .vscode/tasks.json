@@ -17,7 +17,7 @@
 				"/Fo:",
 				"${workspaceFolder}\\obj\\",
 				"/Fe:",
-				"${workspaceFolder}\\bin\\sudoku-sovler.exe",
+				"${workspaceFolder}\\build\\sudoku-sovler.exe",
 				"*.cpp"
 			],
 			"options": {
