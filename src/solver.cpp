@@ -61,10 +61,10 @@ void Solver::eliminateSolve()
             | (bitboards[n] >> 45) | (bitboards[n] >> 54)
             | (bitboards[n] >> 63) | (bitboards[n] >> 72));
         for (int i = 0; i < 9; i++) {
-            // Find rows with digit '1'
+            // Find rows with digit 'n'
             if ((bitboards[n] & rows[i]).any())
                 valid[n] |= rows[i];
-            // Find grids with digit '1'
+            // Find grids with digit 'n'
             if ((bitboards[n] & grids[i]).any())
                 valid[n] |= grids[i];
         }
