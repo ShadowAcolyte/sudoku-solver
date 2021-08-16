@@ -7,6 +7,7 @@ project(sudoku-solver VERSION 1.0)
 set(src
   src/main.cpp
   src/solver.cpp
+  src/solver.h
   )
 
 add_executable(sudoku-solver ${src})
