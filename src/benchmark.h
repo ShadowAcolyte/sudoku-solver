@@ -5,7 +5,7 @@
 #include <chrono>
 
 class benchmark {
-    uint64_t t_start, t_end;
+    std::uint64_t t_start, t_end;
 public:
     benchmark() {
         t_start = std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
