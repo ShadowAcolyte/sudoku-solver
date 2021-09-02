@@ -1,7 +1,6 @@
 # sudoku-solver
-
  Command line sudoku solver written in C++.
----
+ 
 ## Input
  The solver takes input in the following formats:
  
