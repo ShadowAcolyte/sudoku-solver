@@ -12,8 +12,8 @@
  Go into a directory of your choice, and clone the repository:
 
  ```git clone https://github.com/ShadowAcolyte/sudoku-solver.git```
-
  A `CMakeLists.txt` file is present in the root directory. Install [CMake](https://cmake.org/download/) and build the CMake file.
+
 ---
 ## Screenshots
  *"Expert" level puzzle:*
