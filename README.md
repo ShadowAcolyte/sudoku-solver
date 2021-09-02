@@ -9,6 +9,8 @@
 
  Make sure that the string length is exactly 81 characters, and include trailing '0's and '.'s
 
+ If the `--no-info` flag is provided, the program prints the solved state as a string without any additional information, if no solution is found it prints 0
+
 ## Building from source
  Go into a directory of your choice, and clone the repository:
 
