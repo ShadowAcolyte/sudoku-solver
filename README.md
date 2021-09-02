@@ -1,5 +1,5 @@
 # sudoku-solver
- Command line sudoku solver written in C++
+ Command line sudoku solver written in C++.
 ---
 ## Input
  The solver takes input in the following formats:
@@ -9,7 +9,8 @@
 
  Make sure that the string length is exactly 81 characters, and include trailing '0's and '.'s
 
- If the `--no-info` flag is provided, the program prints the solved state as a string without any additional information, if no solution is found it prints 0
+ If the `--no-info` flag is provided, the program prints the solved state as a string without any additional information, if no solution is found it prints 0.
+ ![](img/Screenshot_no_info.png)
 
 ## Building from source
  Go into a directory of your choice, and clone the repository:
