@@ -37,6 +37,23 @@ void display(const std::string& key, const std::string& solvedkey)
 
 int main(int argc, char** argv)
 {
+    if (strcmp(argv[1], "--no-info") == 0) {
+        if (argc == 2) {
+            std::cout << dye::light_red("ERROR: No key specified!\n");
+            return -1;
+        }
+        std::string key(argv[2]);
+        if (key.length() != 81 || key.find_first_not_of("0123456789.") != std::string::npos)
+            return -1;
+        Solver solver{key};
+        if (!solver.solve(0, 0)) {
+            std::cout << 0;
+            return 0;
+        };
+        std::cout << solver.get_state() << std::endl;
+        return 0;
+    }
+
     std::cout << "\nSudoku Solver " << dye::light_green("[Version 1.0.0]\n");
     std::cout << "Author: " << dye::aqua("ShadowAcolyte\n");
     std::cout << dye::aqua("https://github.com/ShadowAcolyte\n\n");
