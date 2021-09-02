@@ -16,6 +16,6 @@
  A `CMakeLists.txt` file is present in the root directory. Install [CMake](https://cmake.org/download/) and build the CMake file.
 
 ## Screenshots
- ![](img/Screenshot_vscode.png)
- ![](img/Screenshot_cmd_1.png)
- ![](img/Screenshot_cmd_2.png)
+ !["Expert" level puzzle](img/Screenshot_vscode.png)
+ !["Medium" level puzzle](img/Screenshot_cmd_1.png)
+ ![Errors](img/Screenshot_cmd_2.png)
