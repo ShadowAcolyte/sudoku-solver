@@ -1,5 +1,4 @@
 #include <iostream>
-#include <bitset>
 #include "color.hpp"
 #include "solver.h"
 #include "benchmark.h"
@@ -62,9 +61,12 @@ int main(int argc, char** argv)
 
     benchmark b;
     Solver solver{key};
-    solver.solve();
+    if (!solver.solve(0, 0)) {
+        std::cout << dye::light_red("No solutions exist!");
+        return 0;
+    };
     b.reset();
 
     std::cout << "\nSolved Board: \n";
-    display(key, solver.getstate());
+    display(key, solver.get_state());;
 }
